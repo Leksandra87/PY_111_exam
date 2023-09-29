@@ -2,6 +2,11 @@ from typing import List
 
 
 def consensus(dna_reads: List[str]) -> str:
+    """
+    Построение консенсус-строки из списка строк одинаковой длины
+    :param dna_reads: список исходных строк
+    :return: консенсус-строка
+    """
     m = len(dna_reads[0])  # длина строки
     n = len(dna_reads)  # количество строк
     result = ''
