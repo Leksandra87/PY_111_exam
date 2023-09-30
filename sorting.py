@@ -8,17 +8,18 @@ def small_sort(arr: List[int]) -> List[int]:
     :param arr: исходный массив целых чисел
     :return: отсортированный массив целых чисел
     """
-    d = {}
+    start = min(arr)
+    stop = max(arr)
+    d = {i: 0 for i in range(start, stop + 1)}
     for i in arr:
-        d[i] = d.get(i, 0) + 1
-    d_sort = sorted(d.items())
+        d[i] = d.get(i) + 1
     result = []
-    for i in d_sort:
-        result += [i[0]] * i[1]
+    for i in d:
+        result += [i] * d[i]
     return result
 
 
 if __name__ == '__main__':
-    nums = [randint(13, 25) for _ in range(10 ** 6)]
-    print(small_sort(nums))
+    nums = small_sort([randint(13, 25) for _ in range(10 ** 6)])
 
+    print(nums)
