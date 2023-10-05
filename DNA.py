@@ -19,5 +19,8 @@ def consensus(dna_reads: List[str]) -> str:
 
 
 if __name__ == '__main__':
-    arr = ['ATTA', 'ACTA', 'AGCA', 'ACAA']
+    arr = ['ATTAATTA',
+           'ACTAATCA',
+           'AGCAACGA',
+           'ACAAAACA']
     print(consensus(arr))

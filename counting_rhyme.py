@@ -16,4 +16,4 @@ def counting_rhyme(n: int, k: int) -> int:
 
 
 if __name__ == '__main__':
-    print(counting_rhyme(7, 5))
+    print(counting_rhyme(5, 7))

@@ -11,6 +11,6 @@ def rent_time(schedule: List[Tuple[int, int]]) -> bool:
 
 
 if __name__ == '__main__':
-    arr = [(10, 12), (12, 13), (15, 19), (18, 22), (22, 23)]
+    arr = [(10, 12), (12, 13), (15, 19), (22, 23),(18, 22)]
     print(rent_time(arr))
 

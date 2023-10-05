@@ -20,6 +20,6 @@ def small_sort(arr: List[int]) -> List[int]:
 
 
 if __name__ == '__main__':
-    nums = small_sort([randint(13, 25) for _ in range(10 ** 6)])
+    nums = small_sort([randint(13, 25) for _ in range(10 ** 4)])
 
     print(nums)

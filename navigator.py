@@ -43,7 +43,7 @@ def navigate(field: List[List[int]], start: Tuple[int, int], stop: Tuple[int, in
 
 
 def check_neighbor(pos: Tuple[int, int], c: int, r: int) -> List[Tuple[int, int]]:
-    col, row = pos
+    row, col = pos
     neighbors = []
     if row > 0:
         neighbors.append((row - 1, col))
@@ -59,10 +59,11 @@ def check_neighbor(pos: Tuple[int, int], c: int, r: int) -> List[Tuple[int, int]
 
 if __name__ == '__main__':
     arr = [
-        [2, 3, 8],
-        [4, 1, 5],
-        [6, 3, 7]
+        [2, 1, 3, 8],
+        [4, 1, 2, 5],
+        [6, 1, 3, 7],
+        [6, 1, 3, 7]
     ]
-    st = (2, 2)
+    st = (3, 3)
     e = (0, 0)
     print(navigate(arr, st, e))
